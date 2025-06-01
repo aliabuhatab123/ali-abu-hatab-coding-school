@@ -33,7 +33,7 @@
     <script 
       src="https://www.paypal.com/sdk/js?client-id=BAAx8wkROa-MRW1amiI11hHe3yWxYdcan6pSSyT8Gzc7ilUdryLkRdwn-w3G5YotM0vLdAETWp62Hh5arM&components=hosted-buttons&disable-funding=venmo&currency=USD">
     </script>
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -54,15 +54,10 @@
         {
           "@type": "ContactPoint",
           "telephone": "+972595148311",
+          "email": "ali.abuhatab.dev@gmail.com",
           "contactType": "Customer Service",
           "areaServed": ["PS", "KW", "QA", "OM", "JO"],
           "availableLanguage": ["Arabic"]
-        },
-        {
-          "@type": "ContactPoint",
-          "email": "ali.abuhatab.dev@gmail.com",
-          "contactType": "Customer Service",
-          "areaServed": ["PS", "KW", "QA", "OM", "JO"]
         }
       ],
       "address": {
@@ -71,6 +66,23 @@
         "addressRegion": "فلسطين",
         "addressCountry": "PS"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://alicodingschool.com/#person",
+      "name": "علي أبو حطب",
+      "jobTitle": "مدرب برمجة ومطور برمجيات",
+      "url": "https://alicodingschool.com/#person",
+      "affiliation": {
+        "@id": "https://alicodingschool.com/#organization"
+      },
+      "sameAs": [
+        "https://www.facebook.com/ali.abuhatab.7",
+        "https://www.linkedin.com/in/ali-abu-hatab",
+        "https://www.instagram.com/ali.abu.hatab/",
+        "https://github.com/aliabuhatab123",
+        "https://www.youtube.com/@ali.abu.hatab.coding/"
+      ]
     },
     {
       "@type": "Course",
@@ -85,17 +97,25 @@
         "url": "https://alicodingschool.com/coding-course",
         "price": "49.99",
         "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+        "availability": "http://schema.org/InStock",
+        "category": "Online Course"
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
         "courseMode": "Online",
         "startDate": "2025-07-01",
         "endDate": "2025-12-31",
+        "courseWorkload": "PT2H",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "startDate": "2025-07-01",
+          "endDate": "2025-12-31",
+          "repeatFrequency": "Weekly",
+          "repeatCount": 24,
+          "byDay": ["MO", "WE", "FR"]
+        },
         "instructor": {
-          "@type": "Person",
-          "name": "علي أبو حطب",
-          "url": "https://alicodingschool.com/#person"
+          "@id": "https://alicodingschool.com/#person"
         },
         "location": {
           "@type": "Place",
@@ -104,14 +124,6 @@
             "@type": "PostalAddress",
             "addressCountry": ["PS", "KW", "QA", "OM", "JO"]
           }
-        },
-        "courseWorkload": "2 ساعات أسبوعيًا لمدة 3 أشهر",
-        "courseSchedule": {
-          "@type": "Schedule",
-          "startDate": "2025-07-01",
-          "endDate": "2025-12-31",
-          "repeatFrequency": "P1W",
-          "byDay": ["MO", "WE", "FR"]
         }
       },
       "inLanguage": "ar",
@@ -125,7 +137,13 @@
       "audience": {
         "@type": "Audience",
         "audienceType": "مبتدئون في البرمجة",
-        "geographicArea": ["PS", "KW", "QA", "OM", "JO"]
+        "geographicArea": [
+          { "@type": "AdministrativeArea", "name": "PS" },
+          { "@type": "AdministrativeArea", "name": "KW" },
+          { "@type": "AdministrativeArea", "name": "QA" },
+          { "@type": "AdministrativeArea", "name": "OM" },
+          { "@type": "AdministrativeArea", "name": "JO" }
+        ]
       }
     },
     {
@@ -154,6 +172,63 @@
             "@type": "Answer",
             "text": "نبدأ مع بايثون، ثم نتعلم HTML, CSS, JavaScript، وReact أو Flutter لتطوير الويب والموبايل."
           }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://alicodingschool.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "الدورات",
+          "item": "https://alicodingschool.com/courses"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "دورات لتعلم البرمجة",
+          "item": "https://alicodingschool.com/coding-course"
+        }
+      ]
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "طالب سابق"
+      },
+      "reviewBody": "دورة رائعة وسهلة الفهم للمبتدئين!"
+    },
+    {
+      "@type": "EducationalOccupationalProgram",
+      "name": "برنامج البرمجة للأطفال",
+      "educationalProgramMode": "online",
+      "educationalLevel": "Beginner",
+      "occupationalCategory": {
+        "@type": "CategoryCode",
+        "name": "Coding for Kids"
+      },
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "أكاديمية برمجة"
+      },
+      "hasCourse": [
+        {
+          "@type": "Course",
+          "name": "مقدمة في البرمجة بلغة بايثون",
+          "description": "دورة تفاعلية لتعليم الأطفال أساسيات البرمجة من خلال تمارين مرئية وألعاب بسيطة."
         }
       ]
     }
