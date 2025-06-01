@@ -33,214 +33,131 @@
     <script 
       src="https://www.paypal.com/sdk/js?client-id=BAAx8wkROa-MRW1amiI11hHe3yWxYdcan6pSSyT8Gzc7ilUdryLkRdwn-w3G5YotM0vLdAETWp62Hh5arM&components=hosted-buttons&disable-funding=venmo&currency=USD">
     </script>
-    <!-- Structured Data (Schema.org) -->
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "@id": "https://alicodingschool.com/#organization",
+      "name": "أكاديمية علي أبو حطب التعليمية",
+      "url": "https://alicodingschool.com",
+      "logo": "https://alicodingschool.com/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/ali.abuhatab.7",
+        "https://www.linkedin.com/in/ali-abu-hatab",
+        "https://www.instagram.com/ali.abu.hatab/",
+        "https://github.com/aliabuhatab123",
+        "https://www.youtube.com/@ali.abu.hatab.coding/"
+      ],
+      "contactPoint": [
         {
-          "@type": "Organization",
-          "@id": "https://alicodingschool.com/#organization",
-          "name": "أكاديمية علي أبو حطب التعليمية",
-          "url": "https://alicodingschool.com",
-          "logo": "https://alicodingschool.com/logo.png",
-          "sameAs": [
-            "https://www.facebook.com/ali.abuhatab.7",
-            "https://www.linkedin.com/in/ali-abu-hatab",
-            "https://www.instagram.com/ali.abu.hatab/",
-            "https://github.com/aliabuhatab123",
-            "https://www.youtube.com/@ali.abu.hatab.coding/"
-          ],
-          "contactPoint": [
-            {
-              "@type": "ContactPoint",
-              "telephone": "+972595148311",
-              "contactType": "Customer Service",
-              "areaServed": ["PS", "KW", "QA", "OM", "JO"],
-              "availableLanguage": ["Arabic"]
-            },
-            {
-              "@type": "ContactPoint",
-              "email": "ali.abuhatab.dev@gmail.com",
-              "contactType": "Customer Service",
-              "areaServed": ["PS", "KW", "QA", "OM", "JO"]
-            }
-          ],
+          "@type": "ContactPoint",
+          "telephone": "+972595148311",
+          "contactType": "Customer Service",
+          "areaServed": ["PS", "KW", "QA", "OM", "JO"],
+          "availableLanguage": ["Arabic"]
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "ali.abuhatab.dev@gmail.com",
+          "contactType": "Customer Service",
+          "areaServed": ["PS", "KW", "QA", "OM", "JO"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "نابلس",
+        "addressRegion": "فلسطين",
+        "addressCountry": "PS"
+      }
+    },
+    {
+      "@type": "Course",
+      "@id": "https://alicodingschool.com/coding-course#course",
+      "name": "دورات لتعلم البرمجة",
+      "description": "تعلم البرمجة من خلال دورات شاملة في برمجة الويب، بايثون، جافاسكربت، وتصميم واجهات، مقدمة من أكاديمية علي أبو حطب في فلسطين، الكويت، قطر، عمان، والأردن، مع شهادات معتمدة.",
+      "provider": {
+        "@id": "https://alicodingschool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://alicodingschool.com/coding-course",
+        "price": "49.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "startDate": "2025-07-01",
+        "endDate": "2025-12-31",
+        "instructor": {
+          "@type": "Person",
+          "name": "علي أبو حطب",
+          "url": "https://alicodingschool.com/#person"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "فلسطين، الكويت، قطر، عمان، الأردن",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "نابلس",
-            "addressRegion": "فلسطين",
-            "addressCountry": "PS"
+            "addressCountry": ["PS", "KW", "QA", "OM", "JO"]
+          }
+        },
+        "courseWorkload": "2 ساعات أسبوعيًا لمدة 3 أشهر",
+        "courseSchedule": {
+          "@type": "Schedule",
+          "startDate": "2025-07-01",
+          "endDate": "2025-12-31",
+          "repeatFrequency": "P1W",
+          "byDay": ["MO", "WE", "FR"]
+        }
+      },
+      "inLanguage": "ar",
+      "teaches": [
+        "أساسيات البرمجة",
+        "برمجة الويب (HTML, CSS, JavaScript)",
+        "بايثون للمبتدئين",
+        "تصميم واجهات المستخدم",
+        "إنشاء مشاريع برمجية عملية"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "مبتدئون في البرمجة",
+        "geographicArea": ["PS", "KW", "QA", "OM", "JO"]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "كيف أبدأ تعلم البرمجة من الصفر؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ابدأ بتعلم لغة سهلة مثل بايثون، ثم مارس مشاريع صغيرة، واشترك في دورات تعليمية بالعربي مثل دورة علي أبو حطب."
           }
         },
         {
-          "@type": "Person",
-          "@id": "https://alicodingschool.com/#person",
-          "name": "علي أبو حطب",
-          "jobTitle": "مدرب برمجة ومطور برمجيات",
-          "affiliation": {
-            "@id": "https://alicodingschool.com/#organization"
-          },
-          "sameAs": [
-            "https://www.facebook.com/ali.abuhatab.7",
-            "https://www.linkedin.com/in/ali-abu-hatab",
-            "https://www.instagram.com/ali.abu.hatab/",
-            "https://github.com/aliabuhatab123",
-            "https://www.youtube.com/@ali.abu.hatab.coding/"
-          ]
+          "@type": "Question",
+          "name": "هل تقدم الأكاديمية دورات مجانية؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نعم، الأكاديمية توفر دورات مجانية ومدفوعة في عدة مجالات مثل بايثون، تطوير مواقع، وتطبيقات الموبايل."
+          }
         },
         {
-          "@type": "Course",
-          "@id": "https://alicodingschool.com/coding-course#course",
-          "name": "دورات لتعلم البرمجة",
-          "description": "تعلم البرمجة من خلال دورات شاملة في برمجة الويب، بايثون، جافاسكربت، وتصميم واجهات، مقدمة من أكاديمية علي أبو حطب في فلسطين، الكويت، قطر، عمان، والأردن، مع شهادات معتمدة.",
-          "provider": {
-            "@id": "https://alicodingschool.com/#organization"
-          },
-          "hasCourseInstance": {
-            "@type": "CourseInstance",
-            "courseMode": "Online",
-            "instructor": {
-              "@id": "https://alicodingschool.com/#person"
-            },
-            "location": {
-              "@type": "Place",
-              "name": "فلسطين، الكويت، قطر، عمان، الأردن",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": ["PS", "KW", "QA", "OM", "JO"]
-              }
-            },
-            "startDate": "2025-07-01",
-            "endDate": "2025-12-31",
-            "url": "https://alicodingschool.com/coding-course"
-          },
-          "inLanguage": "ar",
-          "teaches": [
-            "أساسيات البرمجة",
-            "برمجة الويب (HTML, CSS, JavaScript)",
-            "بايثون للمبتدئين",
-            "تصميم واجهات المستخدم",
-            "إنشاء مشاريع برمجية عملية"
-          ],
-          "audience": {
-            "@type": "Audience",
-            "audienceType": "Beginner Programmers",
-            "geographicArea": ["Palestine", "Kuwait", "Qatar", "Oman", "Jordan"]
+          "@type": "Question",
+          "name": "ما هي لغات البرمجة التي أتعلمها؟",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "نبدأ مع بايثون، ثم نتعلم HTML, CSS, JavaScript، وReact أو Flutter لتطوير الويب والموبايل."
           }
         }
       ]
     }
-    </script>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "كيف أبدأ تعلم البرمجة من الصفر؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ابدأ بتعلم لغة سهلة مثل بايثون، ثم مارس مشاريع صغيرة، واشترك في دورات تعليمية بالعربي مثل دورة علي أبو حطب."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "هل تقدم الأكاديمية دورات مجانية؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "نعم، الأكاديمية توفر دورات مجانية ومدفوعة في عدة مجالات مثل بايثون، تطوير مواقع، وتطبيقات الموبايل."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "ما هي لغات البرمجة التي أتعلمها؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "نبدأ مع بايثون، ثم نتعلم HTML, CSS, JavaScript، وReact أو Flutter لتطوير الويب والموبايل."
-      }
-    }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "EducationalOccupationalProgram",
-  "name": "برنامج البرمجة للأطفال",
-  "educationalProgramMode": "online",
-  "educationalLevel": "Beginner",
-  "occupationalCategory": {
-    "@type": "CategoryCode",
-    "name": "Coding for Kids"
-  },
-  "provider": {
-    "@type": "EducationalOrganization",
-    "name": "أكاديمية برمجة"
-  },
-  "hasCourse": [
-    {
-      "@type": "Course",
-      "name": "مقدمة في البرمجة بلغة بايثون",
-      "description": "دورة تفاعلية لتعليم الأطفال أساسيات البرمجة من خلال تمارين مرئية وألعاب بسيطة."
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "ما هي أفضل دورة برمجة للأطفال باللغة العربية؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "أكاديمية برمجة تقدم دورة تفاعلية ومبسطة لتعليم الأطفال البرمجة باستخدام ألعاب وتمارين ممتعة."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "هل أستطيع تعلم البرمجة بدون خبرة سابقة؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "نعم! تقدم الأكاديمية دورات مخصصة للمبتدئين تبدأ من الصفر وتشرح الأساسيات باللغة العربية."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "هل الدورات تشمل مشاريع تطبيقية؟",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "نعم، كل دورة تحتوي على مشاريع عملية مثل تصميم مواقع، إنشاء ألعاب بسيطة، وبرمجة تطبيقات."
-      }
-    }
-  ]
-}
-</script>
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Ali Abu Hatab",
-  "url": "https://aliabuhatab.com",
-  "image": "https://aliabuhatab.com/images/ali-profile.jpg",
-  "sameAs": [
-    "https://www.facebook.com/ali.abuhatab.7",
-    "https://twitter.com/AliAbuHatab",
-    "https://www.linkedin.com/in/ali-abu-hatab",
-    "https://www.instagram.com/ali.abu.hatab/",
-    "https://github.com/aliabuhatab123"
-  ],
-  "jobTitle": "مدرب برمجة ومطور مواقع",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "أكاديمية علي أبو حطاب"
-  }
 }
 </script>
 
