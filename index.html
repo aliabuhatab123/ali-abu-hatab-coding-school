@@ -33,7 +33,7 @@
     <script 
       src="https://www.paypal.com/sdk/js?client-id=BAAx8wkROa-MRW1amiI11hHe3yWxYdcan6pSSyT8Gzc7ilUdryLkRdwn-w3G5YotM0vLdAETWp62Hh5arM&components=hosted-buttons&disable-funding=venmo&currency=USD">
     </script>
- <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -50,16 +50,14 @@
         "https://github.com/aliabuhatab123",
         "https://www.youtube.com/@ali.abu.hatab.coding/"
       ],
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "telephone": "+972595148311",
-          "email": "ali.abuhatab.dev@gmail.com",
-          "contactType": "Customer Service",
-          "areaServed": ["PS", "KW", "QA", "OM", "JO"],
-          "availableLanguage": ["Arabic"]
-        }
-      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+972595148311",
+        "email": "ali.abuhatab.dev@gmail.com",
+        "contactType": "Customer Service",
+        "areaServed": ["PS", "KW", "QA", "OM", "JO"],
+        "availableLanguage": ["Arabic"]
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "نابلس",
@@ -72,7 +70,6 @@
       "@id": "https://alicodingschool.com/#person",
       "name": "علي أبو حطب",
       "jobTitle": "مدرب برمجة ومطور برمجيات",
-      "url": "https://alicodingschool.com/#person",
       "affiliation": {
         "@id": "https://alicodingschool.com/#organization"
       },
@@ -147,6 +144,67 @@
       }
     },
     {
+      "@type": "Course",
+      "@id": "https://alicodingschool.com/coding-course#kids-python",
+      "name": "مقدمة في البرمجة بلغة بايثون",
+      "description": "دورة تفاعلية لتعليم الأطفال أساسيات البرمجة من خلال تمارين مرئية وألعاب بسيطة.",
+      "provider": {
+        "@id": "https://alicodingschool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://alicodingschool.com/kids-python",
+        "price": "0.00",
+        "priceCurrency": "USD",
+        "availability": "http://schema.org/InStock",
+        "category": "Kids Programming"
+      },
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "startDate": "2025-07-01",
+        "endDate": "2025-09-30",
+        "courseWorkload": "PT1H",
+        "instructor": {
+          "@id": "https://alicodingschool.com/#person"
+        },
+        "location": {
+          "@type": "Place",
+          "name": "عبر الإنترنت"
+        }
+      },
+      "inLanguage": "ar",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "أطفال",
+        "geographicArea": {
+          "@type": "AdministrativeArea",
+          "name": "الدول العربية"
+        }
+      },
+      "teaches": [
+        "مفاهيم البرمجة الأساسية",
+        "بايثون للمبتدئين",
+        "أنشطة برمجية تفاعلية"
+      ]
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "طالب سابق"
+      },
+      "reviewBody": "دورة رائعة وسهلة الفهم للمبتدئين!",
+      "itemReviewed": {
+        "@id": "https://alicodingschool.com/coding-course#course"
+      }
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -197,45 +255,10 @@
           "item": "https://alicodingschool.com/coding-course"
         }
       ]
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "author": {
-        "@type": "Person",
-        "name": "طالب سابق"
-      },
-      "reviewBody": "دورة رائعة وسهلة الفهم للمبتدئين!"
-    },
-    {
-      "@type": "EducationalOccupationalProgram",
-      "name": "برنامج البرمجة للأطفال",
-      "educationalProgramMode": "online",
-      "educationalLevel": "Beginner",
-      "occupationalCategory": {
-        "@type": "CategoryCode",
-        "name": "Coding for Kids"
-      },
-      "provider": {
-        "@type": "EducationalOrganization",
-        "name": "أكاديمية برمجة"
-      },
-      "hasCourse": [
-        {
-          "@type": "Course",
-          "name": "مقدمة في البرمجة بلغة بايثون",
-          "description": "دورة تفاعلية لتعليم الأطفال أساسيات البرمجة من خلال تمارين مرئية وألعاب بسيطة."
-        }
-      ]
     }
   ]
 }
 </script>
-
 
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" sizes="32x32" href="https://img-c.udemycdn.com/user/200_H/132245012_0661_4.jpg">
