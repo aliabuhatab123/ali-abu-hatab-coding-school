@@ -1,18 +1,12 @@
 User-agent: *
-Allow: /
-<<<<<<< HEAD
-Disallow: /admin/
-Disallow: /private/
-Disallow: /wp-admin/
+Allow: /home.html
+Allow: /ar/home.html
+Allow: /courses/ar-html-css-javascript-course.html
+Allow: /courses/en-html-css-javascript.html
+Allow: /styles.css
+Disallow: /Images/
+Disallow: /courses/*.pdf
 Sitemap: https://alicodingschool.com/sitemap.xml
-=======
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /cart/
-Disallow: /checkout/
-Disallow: /my-account/
-Disallow: /search
-Disallow: /?s=
 
 # Delay to avoid server overload (optional, adjust for your hosting power)
 Crawl-delay: 10
