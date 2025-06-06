@@ -1,6 +1,59 @@
 User-agent: *
 Allow: /
+<<<<<<< HEAD
 Disallow: /admin/
 Disallow: /private/
 Disallow: /wp-admin/
 Sitemap: https://alicodingschool.com/sitemap.xml
+=======
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /my-account/
+Disallow: /search
+Disallow: /?s=
+
+# Delay to avoid server overload (optional, adjust for your hosting power)
+Crawl-delay: 10
+
+# Sitemap files
+Sitemap: https://alicodingschool.com/sitemap.xml
+
+# Targeting specific bots (optional but recommended)
+User-agent: Googlebot
+Allow: /
+Disallow: /noindex/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+# Optional: Blocking useless bots or scrapers
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+# Prevent indexing of internal search pages
+Disallow: /?s=
+Disallow: /search
+
+# Prevent duplication if you're using parameters
+Disallow: /*?orderby=
+Disallow: /*?add-to-cart=
+Disallow: /*?filter_
+>>>>>>> f38717aa75ecb0a164bb72a0a4b0c9a2ea2b5029
