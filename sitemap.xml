@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <!-- Main Pages -->
     <url>
         <loc>https://alicodingschool.com/home.html</loc>
         <lastmod>2025-06-06</lastmod>
@@ -18,6 +18,7 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/home.html"/>
         <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/ar/home.html"/>
     </url>
+    <!-- Course Pages -->
     <url>
         <loc>https://alicodingschool.com/courses/ar-html-css-javascript-course.html</loc>
         <lastmod>2025-06-06</lastmod>
@@ -32,90 +33,23 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/courses/ar-html-css-javascript-course.html"/>
-        <xhtml:link rel="alternate" href="https://alicodingschool.com/courses/en-html-css-javascript.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/courses/en-html-css-javascript.html"/>
     </url>
-</urlset>
-=======
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <!-- Main Page -->
-    <url>
-        <loc>https://alicodingschool.com/</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/" />
-    </url>
-    <!-- About Section -->
+    <!-- Single Page Sections -->
     <url>
         <loc>https://alicodingschool.com/#about</loc>
         <lastmod>2025-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#about" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#about"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/#about"/>
     </url>
-    <!-- Services Section -->
     <url>
         <loc>https://alicodingschool.com/#services</loc>
         <lastmod>2025-06-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#services" />
-    </url>
-    <!-- Coding Course Section -->
-    <url>
-        <loc>https://alicodingschool.com/#coding-course</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#coding-course" />
-    </url>
-    <!-- Free Lesson Form Section -->
-    <url>
-        <loc>https://alicodingschool.com/#free-lesson-form</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#free-lesson-form" />
-    </url>
-    <!-- Other Courses Section -->
-    <url>
-        <loc>https://alicodingschool.com/#other-courses</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#other-courses" />
-    </url>
-    <!-- Live Sessions Benefits Section -->
-    <url>
-        <loc>https://alicodingschool.com/#live-sessions-benefit</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#live-sessions-benefit" />
-    </url>
-    <!-- Workflow Section -->
-    <url>
-        <loc>https://alicodingschool.com/#workflow</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#workflow" />
-    </url>
-    <!-- FAQ Section -->
-    <url>
-        <loc>https://alicodingschool.com/#faq</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#faq" />
-    </url>
-    <!-- Contact Section -->
-    <url>
-        <loc>https://alicodingschool.com/#contact</loc>
-        <lastmod>2025-06-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#contact" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/#services"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/#services"/>
     </url>
 </urlset>
->>>>>>> f38717aa75ecb0a164bb72a0a4b0c9a2ea2b5029
