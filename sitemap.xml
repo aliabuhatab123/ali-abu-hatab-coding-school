@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://alicodingschool.com/home.html</loc>
+        <lastmod>2025-06-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/ar/home.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/home.html"/>
+    </url>
+    <url>
+        <loc>https://alicodingschool.com/ar/home.html</loc>
+        <lastmod>2025-06-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/home.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/ar/home.html"/>
+    </url>
+    <url>
+        <loc>https://alicodingschool.com/courses/ar-html-css-javascript-course.html</loc>
+        <lastmod>2025-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://alicodingschool.com/courses/en-html-css-javascript.html"/>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/courses/ar-html-css-javascript-course.html"/>
+    </url>
+    <url>
+        <loc>https://alicodingschool.com/courses/en-html-css-javascript.html</loc>
+        <lastmod>2025-06-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://alicodingschool.com/courses/ar-html-css-javascript-course.html"/>
+        <xhtml:link rel="alternate" href="https://alicodingschool.com/courses/en-html-css-javascript.html"/>
+    </url>
+</urlset>
