@@ -1709,6 +1709,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <textarea id="free_goals" name="free_goals" rows="4"></textarea>
                 </div>
                 <button type="submit"><i class="fas fa-paper-plane"></i> Submit</button>
+                <div class="thankyou-free-lesson" style="color: green; margin-top: 10px;"></div>
             </form>
         </div>
     </section>
@@ -1849,6 +1850,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+                  <div class="thankyou-contact" style="color: green; margin-top: 10px;"></div>
             </form>
         </div>
     </div>
@@ -1949,28 +1951,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         content.classList.toggle('show');
     }
 
-    // Contact form WhatsApp submission
-    document.querySelector('.contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const subject = document.getElementById('subject').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const whatsappMessage = `Hello, I am ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage:\n${message}`;
-        const whatsappURL = `https://api.whatsapp.com/send?phone=972595148311&text=${encodeURIComponent(whatsappMessage)}`;
-        window.open(whatsappURL, '_blank');
-    });
+// Contact form WhatsApp submission
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const whatsappMessage = `Hello, I am ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage:\n${message}`;
+    const whatsappURL = `https://api.whatsapp.com/send?phone=972595148311&text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(whatsappURL, '_blank');
 
-    // Free lesson form WhatsApp submission
-    document.querySelector('.free-lesson-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = document.getElementById('free_name').value.trim();
-        const email = document.getElementById('free_email').value.trim();
-        const goals = document.getElementById('free_goals').value.trim();
-        const whatsappMessage = `Request to register for a free programming lesson:\nFull Name: ${name}\nEmail: ${email}\nWhat they hope to achieve from the course:\n${goals}`;
-        const whatsappURL = `https://api.whatsapp.com/send?phone=972595148311&text=${encodeURIComponent(whatsappMessage)}`;
-        window.open(whatsappURL, '_blank');
-    });
+    const thankYouElement = document.querySelector('.thankyou-contact');
+    if (thankYouElement) {
+        thankYouElement.textContent = 'Thank you for your message. We will contact you soon.';
+    }
+});
+
+// Free lesson form WhatsApp submission
+document.querySelector('.free-lesson-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('free_name').value.trim();
+    const email = document.getElementById('free_email').value.trim();
+    const goals = document.getElementById('free_goals').value.trim();
+    const whatsappMessage = `Request to register for a free programming lesson:\nFull Name: ${name}\nEmail: ${email}\nWhat they hope to achieve from the course:\n${goals}`;
+    const whatsappURL = `https://api.whatsapp.com/send?phone=972595148311&text=${encodeURIComponent(whatsappMessage)}`;
+    
+    window.open(whatsappURL, '_blank');
+
+    const thankYouElement = document.querySelector('.thankyou-free-lesson');
+    if (thankYouElement) {
+        thankYouElement.textContent = 'Thank you for your request. We will contact you soon.';
+    }
+});
+
 </script>
 </body>
 </html>
